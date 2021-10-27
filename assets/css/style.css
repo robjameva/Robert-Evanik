@@ -1,0 +1,59 @@
+
+/* Global Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Header Section */
+
+#profile_pic img {
+    height: 300px;
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav {
+    margin: 7px 0;
+    background-color: lightcoral;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    display: fixed;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
