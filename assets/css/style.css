@@ -4,8 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 
 
@@ -14,46 +18,62 @@
 #profile_pic img {
     height: 300px;
     border-radius: 50%;
+    margin: 25px;
+    border: 5px solid gainsboro;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.rob {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rob nav {
+    margin-top: 35px;
+}
+
+.rob h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 3.5em;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header nav {
-    margin: 7px 0;
-    background-color: lightcoral;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-}
-
-header nav ul {
+    background-image: url("../images/banner.png");
+    background-position: center;
     display: flex;
     justify-content: space-between;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
-header nav ul a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
-.hero {
-    background-size: cover;
-    background-position: center;
-    display: fixed;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
+
+.section-title {
+    font-size: 3.5em;
+    padding: 15px 485px;
+    border-bottom: 3px solid black;
+    margin: 50px auto;
+    
+}
+
+#about, #projects, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
