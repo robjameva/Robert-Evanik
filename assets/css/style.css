@@ -16,7 +16,7 @@ body {
 /* Header Section */
 
 #profile_pic img {
-    height: 300px;
+    height: 350px;
     border-radius: 50%;
     margin: 25px;
     border: 5px solid gainsboro;
@@ -24,13 +24,13 @@ body {
 }
 
 .rob {
-    margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .rob nav {
-    margin-top: 35px;
+    
 }
 
 .rob h1 a {
@@ -43,8 +43,8 @@ header {
     display: flex;
     background-image: url("../images/banner.png");
     background-position: center;
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
@@ -55,10 +55,14 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    background-color: rgb(135, 226, 253);
+    border-radius: 25px;
+    padding: 5px;
+    font-weight: bold;
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(173, 52, 189);
     text-decoration: none;
     font-size: 1.5em;
 }
