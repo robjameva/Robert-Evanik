@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #3d4c41;
+    --secondary-color: #999999;
+    --tertiary-color: #e6e6e6;
+}
+
 
 /* Global Section */
 * {
@@ -9,6 +15,7 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--tertiary-color);
 }
 
 
@@ -19,7 +26,7 @@ body {
     height: 350px;
     border-radius: 50%;
     margin: 25px;
-    border: 5px solid gainsboro;
+    border: 5px solid var(--tertiary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -34,14 +41,14 @@ body {
 }
 
 .rob h1 a {
-    color: white;
+    color: var(--tertiary-color);
     text-decoration: none;
     font-size: 3.5em;
 }
 
 header {
     display: flex;
-    background-image: url("../images/banner.png");
+    background-color: var(--primary-color);
     background-position: center;
     justify-content: flex-start;
     align-items: center;
@@ -55,14 +62,14 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    background-color: rgb(135, 226, 253);
+    background-color: var(--tertiary-color);
     border-radius: 25px;
     padding: 5px;
     font-weight: bold;
 }
 
 nav ul li a {
-    color: rgb(173, 52, 189);
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -71,8 +78,9 @@ nav ul li a {
 .section-title {
     font-size: 3.5em;
     padding: 15px 485px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--secondary-color);
     margin: 50px auto;
+    color: var(--primary-color);
     
 }
 
