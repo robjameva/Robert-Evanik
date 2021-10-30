@@ -26,6 +26,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 74%;
+    margin: auto;
 }
 
 .section-title {
@@ -47,7 +49,7 @@ header {
     margin-bottom: 50px;
 }
 
-/* DIV 1: Profile pic */
+/* Profile pic */
 #profile_pic img {
     height: 300px;
     border-radius: 50%;
@@ -56,7 +58,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* DIV 2: Title and Nav */
+/* Title and Nav */
 .rob {
     display: flex;
     flex-direction: column;
@@ -86,9 +88,8 @@ header .rob nav ul {
     padding: 5px;
     font-weight: bold;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    
 }
 
 header .rob nav ul li a {
@@ -96,11 +97,6 @@ header .rob nav ul li a {
     text-decoration: none;
     font-size: 2em;
 }
-
-
-
-
-
 
 
 
@@ -121,28 +117,31 @@ section, main {
 
 
 
-
-
-
-
-
 /* Projects Section */
 .project {
-    width: 35%;
+    width: 49%;
     height: 450px;
     border: solid black 1px;
+    border-radius: 15px;
     margin:15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .project:first-child {
-    width: 72%;
+    width: 100%;
 }
 
-
-
-
-
-
+.project p {
+    display: flex;
+    height: 35px;
+    width: 45%;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 15px 0;
+}
 
 
 
@@ -158,23 +157,27 @@ section, main {
     height: 450px;
     width: 20%;
     border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.platform p {
+    width: 100%;
+    height: 35%;
+    background-color:coral;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
 /* Footer */
-
-
 footer {
     display: flex;
     justify-content: space-between;
