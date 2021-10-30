@@ -29,10 +29,10 @@ body {
 }
 
 .section-title {
-    font-size: 3.5em;
+    font-size: 3em;
     width: 50%;
     padding-bottom: 20px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);
     margin: 0 auto 35px auto;
     color: var(--primary-color);
     text-align: center;
@@ -44,16 +44,12 @@ header {
     background-color: var(--primary-color);
     background-position: center;
     display: flex;
+    margin-bottom: 50px;
 }
 
 /* DIV 1: Profile pic */
-
-#profile_pic {
-
-}
-
 #profile_pic img {
-    height: 400px;
+    height: 300px;
     border-radius: 50%;
     margin: 25px;
     border: 5px solid var(--tertiary-color);
@@ -66,7 +62,6 @@ header {
     flex-direction: column;
     flex: 2;
     align-items: center;
-    height: 404px;
 }
 
 /* Robert Evanik Title */
@@ -77,13 +72,12 @@ header {
 .rob h1 a {
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 5.5em;
+    font-size: 4.5em;
 }
 
 /* Nav bar */
 header .rob nav {
-    align-self: center;
-    margin: 0 auto;
+    width: 75%;
 }
 
 header .rob nav ul {
@@ -92,15 +86,15 @@ header .rob nav ul {
     padding: 5px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    
 }
 
 header .rob nav ul li a {
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 2.5em;
-    
+    font-size: 2em;
 }
 
 
@@ -110,28 +104,97 @@ header .rob nav ul li a {
 
 
 
-
+/* About Section */
 section, main {
     padding: 60px;
 }
 
 #about p {
-    font-size: 2em;;
+    font-size: 1.5em;;
     text-indent: 2em;
     line-height: 1.7;
-    width: 85%;
+    width: 65%;
     margin: auto;
 }
 
 
 
+
+
+
+
+
+
+
+/* Projects Section */
 .project {
     width: 35%;
-    height: 400px;
+    height: 450px;
     border: solid black 1px;
-    margin: 15px;
+    margin:15px;
 }
 
 .project:first-child {
     width: 72%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Section*/
+.platforms {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.platform {
+    height: 450px;
+    width: 20%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 20px 15px;
+}
+
+footer h2 {
+    color: var(--tertiary-color);
+    font-size: 1em;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--tertiary-color);
 }
