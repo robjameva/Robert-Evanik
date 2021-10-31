@@ -20,13 +20,13 @@ body {
 
 .flex-row {
     display: flex;
+    justify-content: center;
 }
 
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 74%;
+    width: 80%;
     margin: auto;
 }
 
@@ -35,7 +35,7 @@ body {
     width: 50%;
     padding-bottom: 20px;
     border-bottom: 5px solid var(--secondary-color);
-    margin: 0 auto 35px auto;
+    margin: 100px auto 45px auto;
     color: var(--primary-color);
     text-align: center;
 }
@@ -46,10 +46,21 @@ header {
     background-color: var(--primary-color);
     background-position: center;
     display: flex;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.hero {
+    display: flex;
 }
 
 /* Profile pic */
+#profile_pic {
+    background-color: var(--primary-color);
+}
+
 #profile_pic img {
     height: 300px;
     border-radius: 50%;
@@ -64,6 +75,7 @@ header {
     flex-direction: column;
     flex: 2;
     align-items: center;
+    background-color: var(--primary-color);
 }
 
 /* Robert Evanik Title */
@@ -78,11 +90,11 @@ header {
 }
 
 /* Nav bar */
-header .rob nav {
-    width: 75%;
+header nav {
+    width: 100%;
 }
 
-header .rob nav ul {
+header nav ul {
     list-style: none;
     background-color: var(--primary-color);
     padding: 5px;
@@ -92,7 +104,7 @@ header .rob nav ul {
     align-items: center;
 }
 
-header .rob nav ul li a {
+header nav ul li a {
     color: var(--tertiary-color);
     text-decoration: none;
     font-size: 2em;
@@ -101,9 +113,7 @@ header .rob nav ul li a {
 
 
 /* About Section */
-section, main {
-    padding: 60px;
-}
+
 
 #about p {
     font-size: 1.5em;;
@@ -119,7 +129,7 @@ section, main {
 
 /* Projects Section */
 .project {
-    width: 49%;
+    width:47%;
     height: 450px;
     border: solid black 1px;
     border-radius: 15px;
@@ -150,17 +160,20 @@ section, main {
 .platforms {
     display: flex;
     justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
 }
 
 
 .platform {
-    height: 450px;
+    height: 200px;
     width: 20%;
     border: 1px solid black;
     border-radius: 15px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .platform p {
@@ -173,7 +186,10 @@ section, main {
     align-items: center;
 }
 
-
+.platform img {
+    height: 50%;
+    width: 50%;
+}
 
 
 
@@ -185,6 +201,7 @@ footer {
     background: var(--primary-color);
     width: 100%;
     padding: 20px 15px;
+    margin-top: 150px;
 }
 
 footer h2 {
