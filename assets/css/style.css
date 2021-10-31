@@ -26,8 +26,8 @@ body {
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
+    /* width: 80%;
+    margin: auto; */
 }
 
 .section-title {
@@ -86,12 +86,14 @@ header {
 .rob h1 a {
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 4.5em;
+    font-size: 5.5em;
+    margin-right: 320px;
 }
 
 /* Nav bar */
 header nav {
-    width: 100%;
+    width: 50%;
+    margin: auto;
 }
 
 header nav ul {
@@ -128,12 +130,17 @@ header nav ul li a {
 
 
 /* Projects Section */
+main {
+    width: 85%;
+    margin: auto;
+}
+
 .project {
     width:47%;
     height: 450px;
     border: solid black 1px;
     border-radius: 15px;
-    margin:15px;
+    margin: 15px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
