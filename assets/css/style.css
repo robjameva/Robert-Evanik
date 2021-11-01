@@ -215,7 +215,6 @@ main {
 .platform {
     height: 200px;
     width: 20%;
-    border: 1px solid black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -223,14 +222,29 @@ main {
     justify-content: space-between;
 }
 
-.platform p {
+.platform a {
     width: 100%;
     height: 35%;
-    background-color:coral;
+    text-decoration: none;
+}
+
+.platform a p {
+    width: 100%;
+    height: 100%;
+    background-color:var(--primary-color);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
+    font-size: 1em;
+    color: var(--tertiary-color);
+}
+
+#email p:hover,
+#github p:hover,
+#linkedin p:hover {
+    background-color: coral;
 }
 
 .platform img {
