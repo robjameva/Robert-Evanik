@@ -1,0 +1,344 @@
+:root {
+    --primary-color: #3d4c41;
+    --secondary-color: #999999;
+    --tertiary-color: #e6e6e6;
+}
+
+
+/* Global Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--tertiary-color);
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-size: 3vw;
+    width: 50%;
+    padding-bottom: 20px;
+    border-bottom: 5px solid var(--secondary-color);
+    margin: 100px auto 45px auto;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+/* Header Section */
+header {
+    background-color: var(--primary-color);
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.hero {
+    display: flex;
+}
+
+/* Profile pic */
+#profile_pic {
+    background-color: var(--primary-color);
+}
+
+#profile_pic img {
+    height: 20vw;
+    border-radius: 50%;
+    margin: 25px;
+    border: 5px solid var(--tertiary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Title and Nav */
+.rob {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+/* Robert Evanik Title */
+.rob h1 {
+    margin: auto;
+    width: 100%;
+}
+
+.rob h1 a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 10vw;
+    
+}
+
+/* Nav bar */
+header nav {
+    width: 50%;
+    margin: auto;
+}
+
+header nav ul {
+    list-style: none;
+    background-color: var(--primary-color);
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+}
+
+
+
+/* About Section */
+
+
+#about p {
+    font-size: 1.5vw;;
+    text-indent: 2em;
+    line-height: 1.7;
+    width: 65%;
+    margin: auto;
+}
+
+
+
+
+
+/* Projects Section */
+main {
+    width: 85%;
+    margin: auto;
+}
+
+.project {
+    width: 47%;
+    height: 450px;
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.project:hover {
+    border: 5px solid var(--primary-color);
+}
+
+
+.project:first-child {
+    width: 100%;
+}
+
+.project p {
+    display: flex;
+    height: 55px;
+    width: 45%;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 15px 0;
+    font-weight: bolder;
+    font-size: 2vw;
+    position: absolute;
+    z-index: 2;
+}  
+
+
+
+#project-1:hover p, 
+#project-2:hover p, 
+#project-3:hover p, 
+#project-4:hover p, 
+#project-5:hover p {
+    background-color: coral;
+}
+
+.project a {
+    width: 100%;
+    height: 100%;
+}
+
+.project a img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+/* Contact Section*/
+.platforms {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.platform {
+    height: 200px;
+    width: 20%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.platform a {
+    width: 100%;
+    height: 35%;
+    text-decoration: none;
+}
+
+.platform a p {
+    width: 100%;
+    height: 100%;
+    background-color:var(--primary-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1vw;
+    color: var(--tertiary-color);
+}
+
+#email p:hover,
+#github p:hover,
+#linkedin p:hover {
+    background-color: coral;
+}
+
+.platform img {
+    height: 50%;
+    width: 50%;
+}
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 20px 15px;
+    margin-top: 150px;
+}
+
+footer h2 {
+    color: var(--tertiary-color);
+    font-size: 2vw;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--tertiary-color);
+    font-size: 2vw;
+}
+
+
+
+
+/* Media Queries */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1177px) {
+    .project {
+        width: 100%;
+    }
+
+    .platforms {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .platform a p {
+        font-size: 1.5vw;
+    }
+   
+    header nav {
+        width: 100%;
+    }
+} 
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 800px) {
+    .section-title {
+        margin: 50px auto 25px auto;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .project {
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .project:first-child {
+        width: 85%;
+
+    }
+ 
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .project {
+        width: 65%;
+        height: 300px;
+        margin: 25px auto;
+    }
+
+    .project:first-child {
+        width: 65%;
+
+    }
+   
+}
