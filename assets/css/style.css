@@ -30,7 +30,7 @@ body {
 }
 
 .section-title {
-    font-size: 3em;
+    font-size: 3vw;
     width: 50%;
     padding-bottom: 20px;
     border-bottom: 5px solid var(--secondary-color);
@@ -62,7 +62,7 @@ header {
 }
 
 #profile_pic img {
-    height: 300px;
+    height: 20vw;
     border-radius: 50%;
     margin: 25px;
     border: 5px solid var(--tertiary-color);
@@ -81,13 +81,14 @@ header {
 /* Robert Evanik Title */
 .rob h1 {
     margin: auto;
+    width: 100%;
 }
 
 .rob h1 a {
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 5.5em;
-    margin-right: 320px;
+    font-size: 10vw;
+    
 }
 
 /* Nav bar */
@@ -109,7 +110,7 @@ header nav ul {
 header nav ul li a {
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 header nav ul li a:hover {
@@ -123,7 +124,7 @@ header nav ul li a:hover {
 
 
 #about p {
-    font-size: 1.5em;;
+    font-size: 1.5vw;;
     text-indent: 2em;
     line-height: 1.7;
     width: 65%;
@@ -141,7 +142,7 @@ main {
 }
 
 .project {
-    width: 48%;
+    width: 47%;
     height: 450px;
     border-radius: 15px;
     margin: 15px;
@@ -154,10 +155,6 @@ main {
 .project:hover {
     border: 5px solid var(--primary-color);
 }
-
-
-
-
 
 
 .project:first-child {
@@ -174,7 +171,7 @@ main {
     align-items: center;
     border-radius: 15px 0 15px 0;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 2vw;
     position: absolute;
     z-index: 2;
 }  
@@ -237,7 +234,7 @@ main {
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    font-size: 1em;
+    font-size: 1vw;
     color: var(--tertiary-color);
 }
 
@@ -267,7 +264,7 @@ footer {
 
 footer h2 {
     color: var(--tertiary-color);
-    font-size: 1em;
+    font-size: 2vw;
     margin: 0;
 }
 
@@ -278,4 +275,70 @@ footer div {
 
 footer a {
     color: var(--tertiary-color);
+    font-size: 2vw;
+}
+
+
+
+
+/* Media Queries */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1177px) {
+    .project {
+        width: 100%;
+    }
+
+    .platforms {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .platform a p {
+        font-size: 1.5vw;
+    }
+   
+    header nav {
+        width: 100%;
+    }
+} 
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 800px) {
+    .section-title {
+        margin: 50px auto 25px auto;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .project {
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .project:first-child {
+        width: 85%;
+
+    }
+ 
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .project {
+        width: 65%;
+        height: 300px;
+        margin: 25px auto;
+    }
+
+    .project:first-child {
+        width: 65%;
+
+    }
+   
 }
