@@ -152,7 +152,7 @@ main {
     width: 100%;
 }
 
-.project p {
+.project .github {
     display: flex;
     height: 55px;
     width: 45%;
@@ -165,13 +165,14 @@ main {
     font-size: 2vw;
     position: absolute;
     z-index: 2;
+    text-decoration: none;
 }  
 
-#project-1:hover p, 
-#project-2:hover p, 
-#project-3:hover p, 
-#project-4:hover p, 
-#project-5:hover p {
+#project-1:hover .github, 
+#project-2:hover .github, 
+#project-3:hover .github, 
+#project-4:hover .github, 
+#project-5:hover .github {
     background-color: coral;
 }
 
